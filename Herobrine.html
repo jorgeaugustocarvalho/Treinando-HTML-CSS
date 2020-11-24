@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Herobrine Pixel art</title>
+
+        <!--Pixel art de minecraft feita com HTML/CSS treinando os conceitos de sobreposição e z-index-->
+        <style>
+
+            body{
+                background: lightskyblue;
+            }
+
+            #principal{
+                margin: 300px auto;
+                border: 20px outset lightgreen;
+                border-radius: 10px;
+                background: rgb(141, 102, 28);
+                width: 500px;
+                height: 600px;
+                position: relative;
+            }
+            .cabeca{
+                margin: 50px auto; 
+                
+                background: rgba(185, 151, 99, 0.918);
+                width: 120px;
+                height: 120px;
+            }
+            .cabelo{
+                margin: 50px auto;
+                background:rgba(73, 53, 22, 0.918);
+                width: 120px;
+                height: 40px;
+                position: absolute;
+                top: 0px;
+
+            }
+            .costeletaesquerda{
+                margin: 50px auto;
+                background:rgba(73, 53, 22, 0.918);
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: 40px;
+                right: 190px;
+            }
+            .costeletadireita{
+                margin: 50px auto;
+                background:rgba(73, 53, 22, 0.918);
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: 40px;
+            }
+            .olho1{
+                margin: 50px auto;
+                background: white;
+                width: 30px;
+                height: 15px;
+                position: absolute;
+                top: 60px;
+                left: 206px;
+            }
+
+            .olho2{
+                margin: 50px auto;
+                background: white;
+                width: 30px;
+                height: 15px;
+                position: absolute;
+                top: 60px;
+                right: 206px;
+            }
+
+            .nariz{
+                margin: 50px auto;
+                background:rgba(172, 132, 78, 0.829); 
+                width: 28px;
+                height: 15px;
+                position: absolute;
+                top: 75px;
+                right: 236px
+                
+            }
+
+            .barba{
+                margin: 50px auto;
+                background:rgba(73, 53, 22, 0.918);
+                width: 58px;
+                height: 15px;
+                position: absolute;
+                top: 105px;
+                right: 221px;
+            }
+
+            .bigode1{
+                margin: 50px auto;
+                background:rgba(73, 53, 22, 0.918);
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: 90px;
+                right: 221px;
+            }
+
+            .bigode2{
+                margin: 50px auto;
+                background:rgba(73, 53, 22, 0.918);
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: 90px;
+                left: 221px;
+
+            }
+
+            .boca{
+                margin: 50px auto;
+                background:rgba(156, 125, 81, 0.829); 
+                width: 28px;
+                height: 15px;
+                position: absolute;
+                top: 90px;
+                right: 236px
+            }
+            .corpo{
+                margin: auto;
+                background: lightseagreen;
+                width: 120px;
+                height: 160px;
+                position: absolute;
+                top: 170px;
+                right: 190px;
+                z-index: 1;
+            }
+            .ombro1{
+                margin: auto;
+                background: lightseagreen;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: 170px;
+                left: 130px;
+                z-index: 1;
+            }
+
+            .ombro2{
+                margin: auto;
+                background: lightseagreen;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: 170px;
+                right: 130px;
+                z-index: 1;
+            }
+
+            .bracos{
+                margin: auto;
+                background: rgba(185, 151, 99, 0.918);;
+                width: 240px;
+                height: 100px;
+                position: absolute;
+                top: 230px;
+                right: 130px;
+                z-index: 0;
+            }
+
+            .pernas{
+                margin: auto;
+                background: rgb(43, 48, 90);
+                width: 120px;
+                height: 360px;
+                position: absolute;
+                top: 170px;
+                right: 190px;
+                z-index: 0;
+            }
+
+            .sapatos{
+                margin: auto;
+                background: rgb(148, 148, 148);
+                width: 120px;
+                height: 40px;
+                position: absolute;
+                top: 500px;
+                right: 190px;
+                z-index: 0;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!--Div para o quadro-->
+        <div id = "principal">
+            
+            <div class = "cabeca">
+                <div class = "cabelo"></div>
+                <div class = "costeletaesquerda"></div>
+                <div class = "costeletadireita"></div>
+                <div class = "olho1"></div>
+                <div class = "olho2"></div>
+                <div class = "nariz"></div>
+                <div class = "bigode1"></div>
+                <div class = "bigode2"></div>
+                <div class = "barba"></div>
+                <div class = "boca"></div>
+            </div>
+
+            <!--Praticando sobreposição de elementos com z-index-->
+
+            <div class = "corpo"></div>
+            <div class = "ombro1"></div>
+            <div class = "ombro2"></div>
+            <div class = "bracos"></div>
+            <div class = "pernas"></div>
+            <div class = "sapatos"></div>
+            
+        </div>
+        
+    </body>
+</html>
