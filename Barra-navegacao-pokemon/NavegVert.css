@@ -1,0 +1,26 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul a {
+    text-decoration: none;
+    background: url(./LogoPokemon/menupokefinal.png);
+    width: 256px;
+    height: 69px;
+    display: block;
+    text-indent: 30px;
+    line-height: 69px;
+    color: rgb(62, 88, 23);
+    font-family:monospace;
+    font-size: 14px;
+}
+
+li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+a:hover {
+    background-position: right bottom;
+}
